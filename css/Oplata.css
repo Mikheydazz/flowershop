@@ -1,0 +1,205 @@
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+input{
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+h1, h2, h3{
+  text-align: center;
+  filter: drop-shadow(0 0 3px white);
+}
+input[type=text] {
+  display: block;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 12px 5%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.oplata{
+  max-width: 500px;
+  margin: 0 auto;
+}
+label {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  margin: 10px 0;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  margin: 0 auto;
+}
+label[for='card']{
+  text-align: center;
+  margin: 0 auto;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+/* Адаптивный макет - когда экран меньше 800 пикселей в ширину, сделайте два столбца стеком друг на друга, а не рядом друг с другом (также измените направление-сделайте столбец "корзина" сверху) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 770px){
+  .shop_image, .first-section, .best_price{
+    display: none;
+  }
+  .about__container_second{
+    margin-top: 50px;
+  }
+  .settings__image{
+    display: block;
+  }
+  .slider-section{
+    padding: 0 20px;
+  }
+  #nav__link_popular{
+    display: none;
+  }
+  .catalog__menu{
+    position: absolute;
+    left: 100%;
+    overflow: hidden;
+    transition: 1s;
+    background-color: white;
+    z-index: 5;
+    height: 1050px;
+    width: calc(100% - 2px);
+  }
+  .reviews{
+    margin-top: 60px;
+  }
+  .catalog{
+    margin-top: 20px;
+  }
+  .container{
+    overflow-y: hidden;
+  }
+  .about{
+    padding: 0 10px;
+  }
+  .about__text_full{
+    max-height: inherit;
+    margin: auto;
+  }
+  .itc-slider-item{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .person__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .person__container > p{
+    margin: 0 auto;
+  }
+  .person{
+    margin: 0 auto;
+  }
+  .person__info__name{
+    margin-bottom: 0;
+  }
+  .catalog_container{
+    overflow-x: hidden;
+  }
+  .footer{
+    flex-direction: column;
+  }
+}
+
+.footer{
+  background-color: #ECBBAA;
+  padding: 30px;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer > div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+footer > div > p, footer > div >  a{
+  background-color: #eab694;
+  padding: 10px 15px;
+  margin: 0.1em;
+  text-decoration: none;
+  color: white;
+  max-width: 400px;
+}

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Art flowers</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/popular.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+		<!-- <div class="container header_container">
+			<img class="cart-img" src="image/3ic.png">
+			<p id="cart-total-amount">0</p>
+			<button id="btn-cart-clear" onclick="clearBag()">Очистить</button>
+		</div> -->
+		<div class="flower-description-modal">
+			<p class="flower-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<header class="header">
+			<div class="container header_container">
+				<img class="logo-img" src="image/logo.png">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#popular" class="nav__link" id="nav__link_popular">Популярное</a></li>
+						<li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+						<li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+						<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+
+					</ul>
+				</nav>
+				<div class="image">
+					<img class="image1"  src="image/1ic.png">
+					<img class="image2"  src="image/2ic.png">
+					<img class="image3"  src="image/3ic.png">
+					<p id="cart-total-amount">0</p>
+					<form class="buy" action="Oplata.html">
+        				<input type="submit" value="Купить"/>
+    				</form>
+				</div>
+				<img class="header_additional_image"  src="image/image 2.png">
+			</div>
+		</header>
+		<main>
+			<section class="first-section container">
+				<div class="first-section-container ">
+					<p class="first-section-desc">Цветок можно определить по его уникальной красоте и невероятному очарованию</p>
+				</div>
+				<button type="button" class="first-section-btn btn">В каталог</button>
+			</section>
+			<section class="sales container">
+        		<div>
+        		    <h2 id="skidka10">Зарегистрируйся и получи 10% на первый заказ</h2>
+            		<p>Получайте интересные идеи для подарков к каждому празднику и полезные советы по уходу цветов</p>
+            		<input type="email" placeholder="TEST@example.com"> 
+            		<button class="btn">Подписатся</button>
+        		</div>
+    		</section>
+			<section class="slider-section" id="popular">
+				<h1 class="popular-title">ПОПУЛЯРНОЕ</h1>
+				<div class="slider">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-inner">
+						<div class="slider-slides">
+							<div class="slider-img-contain">
+								<div class="item">
+									<img class="item__image" src="image/bouquet1.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/bouquet2.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/bouquet3.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-img-contain">
+								<div class="item">
+									<img class="item__image" src="image/buket5.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/buket6.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/buket7.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-img-contain">
+								<div class="item">
+									<img class="item__image" src="image/buket2.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/buket3.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<img class="item__image" src="image/buket4.jpg">
+									<div class="item__menu">
+										<p class="price" price='2800'>Фантазия 2800 руб</p>
+										<div class="item__menu__buttons">
+											<button class="item__menu__more">Подробнее</button>
+											<button class="btn-add-product-to-cart">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+				</div>
+			</section>
+
+    <section class="sales-2 container">
+        <div>
+            <h2>Закажи букет на день рождения и получи 15% скидки</h2>
+            <button class="btn">Подробнее</button>
+        </div>
+    </section>
+			<section class="catalog" id="catalog">
+				<h2 class="section_name">
+					<span>КАТАЛОГ</span>
+					<img src="image/settings.png" class="settings__image" onclick="catalogOpen()">
+				</h2>
+				
+				<div class="container catalog_container">
+					<div class="catalog__menu">
+						<h2 class="title">Категории</h2>
+
+						<div class="settings">
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Весенние букеты</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Свадебные букеты</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Дизайнерские букеты</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Роза в колбе</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Монобукеты</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Цветы в коробке</p></label>
+							</div>
+
+							<div class="settings__item">
+								<input type="checkbox" class="normal_checkbox">
+								<label class="settings__label"><p class='settings__label__name'>Корзина с цветами</p></label>
+							</div>
+
+						</div>
+
+						<h2 class="title">Фильтр</h2>
+						<h2 class="subtitle2"><b>Цена</b></h2>
+			<!-- <div class="ranger_container">
+ 			 <input type="range" min="1" max="100" value="50" class="ranger" id="myRange">
+ 			</div> -->
+
+ 			<div class="wrapper">
+ 				<div class="values">
+ 					<output id="range1" for="slider-1" class="subtitle">
+ 						0
+ 					</output>
+ 					<output id="range2" for="slider-2" class="subtitle">
+ 						10000
+ 					</output>
+ 				</div>
+ 				<div class="container_ranger">
+ 					<div class="slider-track"></div>
+ 					<input type="range" min="0" max="10000" value="0" id="slider-1" oninput="slideOne()" step="100">
+ 					<input type="range" min="0" max="10000" value="10000" id="slider-2" oninput="slideTwo()" step="100">
+ 				</div>
+ 			</div>
+ 			<div class="choose_size">
+ 				<h2 class="subtitle2"><b>Размер</b></h2>
+
+ 				<div class="settings__item">
+ 					<input type="checkbox" class="normal_checkbox">
+ 					<label class="settings__label"><p class='settings__label__name'>Маленький</p></label>
+ 				</div>
+
+ 				<div class="settings__item">
+ 					<input type="checkbox" class="normal_checkbox">
+ 					<label class="settings__label"><p class='settings__label__name'>Средний</p></label>
+ 				</div>
+
+ 				<div class="settings__item">
+ 					<input type="checkbox" class="normal_checkbox">
+ 					<label class="settings__label"><p class='settings__label__name'>Большой</p></label>
+ 				</div>
+ 			</div>
+ 			<div class="choose_color">
+ 				<h2 class="subtitle2"><b>Цвет</b></h2>
+ 				<div class="colors">
+ 					<input type="checkbox" class="color1 color">
+ 					<input type="checkbox" class="color2 color">
+ 					<input type="checkbox" class="color3 color">
+ 					<input type="checkbox" class="color4 color">
+ 					<input type="checkbox" class="color5 color">
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="catalog__flowers">
+ 			<div class="best_price">
+ 				<p class="subtitle">Сортировать по: <b><u>лучшей цене</u></b></p>
+ 			</div>
+
+ 			<div class="flower__storage">
+
+ 				<div class="item">
+ 					<img class="item__image" src="image/bouquet1.jpg">
+ 					<div class="item__menu">
+ 						<p class="price" price='2800'>Фантазия 2800 руб</p>
+ 						<div class="item__menu__buttons">
+ 							<button class="item__menu__more">Подробнее</button>
+ 							<button class="btn-add-product-to-cart">В корзину</button>
+ 						</div>
+ 					</div>
+ 				</div>
+
+
+ 				<div class="item">
+ 					<img class="item__image" src="image/buket6.jpg">
+ 					<div class="item__menu">
+ 						<p class="price" price='2800'>Фантазия 2800 руб</p>
+ 						<div class="item__menu__buttons">
+ 							<button class="item__menu__more">Подробнее</button>
+ 							<button class="btn-add-product-to-cart">В корзину</button>
+ 						</div>
+ 					</div>
+ 				</div>
+
+ 				<div class="item">
+ 					<img class="item__image" src="image/bouquet2.jpg">
+ 					<div class="item__menu">
+ 						<p class="price" price='2800'>Фантазия 2800 руб</p>
+ 						<div class="item__menu__buttons">
+ 							<button class="item__menu__more">Подробнее</button>
+ 							<button class="btn-add-product-to-cart">В корзину</button>
+ 						</div>
+ 					</div>
+ 				</div>
+
+ 				<div class="item">
+ 					<img class="item__image" src="image/bouquet3.jpg">
+ 					<div class="item__menu">
+ 						<p class="price" price='2800'>Фантазия 2800 руб</p>
+ 						<div class="item__menu__buttons">
+ 							<button class="item__menu__more">Подробнее</button>
+ 							<button class="btn-add-product-to-cart"">В корзину</button>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+ <section class="flower container">
+        <div>
+            <h2>Не нашли подходящий букет?</h2>
+            <p>Оставьте свой номер телефона и наш менеджер свяжется с вами в течении 15 минут</p>
+            <input type="text" placeholder="Имя">
+            <br>
+            <br>
+            <input type="tel" placeholder="+7123456789">
+            <br>
+            <br>
+            <button class="btn">Отправить</button>
+        </div>
+    </section>
+ <section class="about" id="about">
+ 	<div class="">
+ 		<h2 class="section_name">О нас</h2>
+ 		<div class="about__container about__container_first">
+ 			<p class="about__text">Наша флористическая компания - это место, где каждый может ощутить на себе магию прекрасного, 	&laquo;закружиться&raquo; в известном &laquo;Вальсе цветов&raquo; и не удивляйтесь, если Вы вдруг испытаете лёгкое головокружение. На то она и сказка, а делают её для Вас странные на первый взгляд чудаки - флористы. На Ваших глазах, из каких-то невзрачных бледных и мелких цветочков, кусочков ткани разной фактуры и вообще не поддающихся описанию не понятных предметов вдруг рождается чудо, нежное, трогательное, неповторимое.</p>
+ 			<img src="image/shop_inside.png" class="shop_inside shop_image">
+ 		</div>
+ 		<div class="about__container about__container_second">
+ 			<img src="image/shop_outside.png" class="shop_outside shop_image">
+ 			<div class="about__text_full">
+ 				<p class="about__text paragraph">Мы движимы привязанностью к цветам и энергией природы, поэтому мы стремимся создавать креативные и достойные внимания растений и новые цветочные направления действий. Мы уверены, что самые лучшие и свежие цветы принесут самые интересные презентации.</p>
+ 				<p class="about__text paragraph">Мы очень движимы большой привязанностью к цветам и энергией большой природы, поэтому мы стремимся создавать очень большие креативные и очень большие достойные внимания большие растения и новые большие цветочные направления больших действий. Мы большие. И уверены, что самые лучшие и большие. Большие свежие цветы принесут самые большие интересные презентации.</p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+ <section class="reviews" id="reviews">
+ 	<div class="container">
+ 		<h2 class="section_name review__title" id="review_id">Отзывы</h2>
+ 		<div class="itc-slider reviews_container" data-slider="itc-slider">
+ 			<div class="itc-slider-wrapper review__wraper">
+ 				<div class="itc-slider-items">
+ 					<div class="itc-slider-item review__slider__container">
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Олег</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Всё на высшем уровне, обязательно обращусь к вам ещё раз</p>
+ 						</div>
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Лена</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Всё отлично. Маме очень понравился букет.</p>
+ 						</div>
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Настя</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Букет шикарный. Доставили вовремя</p>
+ 						</div>
+ 					</div>
+ 					<div class="itc-slider-item review__slider__container">
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Виктория</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Прекрасные цветы, очень понравились.</p>
+ 						</div>
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Дмитрий</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Всегда здесь покупаю, очень доволен.</p>
+ 						</div>
+
+ 						<div class="person__container">
+ 							<div class="person">
+ 								<img class="person__image" src="image/ava.png">
+ 								<div class="person__info">
+ 									<h3 class="person__info__name">Мария</h3>
+ 									<div class="stars">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 										<img class="star" src="image/star.png">
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<p class="review">-Хороший цветочный мазагин, всегда есть выбор.</p>
+ 						</div>
+
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<ol class="itc-slider-indicators">
+ 				<li class="itc-slider-indicator" data-slide-to="0"></li>
+ 				<li class="itc-slider-indicator" data-slide-to="1"></li>
+ 			</ol>
+ 		</div>
+ 	</div>
+ </section>
+</main>
+<footer class="footer">
+    <div>
+    <a href="#popular">Полпуярное</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#about">О нас</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    </div>
+    <div id="contacts">
+        <p>Контакты: Пучина Ирина</p>
+        <p>Номер телефона: +79349743658</p>
+        <p>Е-mail: Art-flower@gmail.com</p>
+        <p>ИП: 346704816496724</p>
+        <p>Адрес: Россия , Ленинградская Область , Санкт-Петербург , Вознесенский просп. 31</p>
+    </div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0745e38eaf911d3aaaa2bdab9374aee1b7a33d67f43ed59adc3555f6a53cbbfb&amp;width=480&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+</footer>
+    
+<script type="text/javascript" src="js/addToBag.js"></script>
+<script type="text/javascript" src="js/ranger.js"></script>
+<script type="text/javascript" src="js/itc-slider.js"></script>
+
+</body>
+</html>

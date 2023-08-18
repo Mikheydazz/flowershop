@@ -1,0 +1,13 @@
+main{
+	
+}
+body{
+	transition:background 1s;
+	font-family: 'Cormorant Garamond';
+}
+.container{
+	position: relative;
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

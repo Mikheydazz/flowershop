@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/Oplata.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header_container">
+      <img class="logo-img" src="image/logo.png">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" id="nav__link_popular">Популярное</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Контакты</a></li>
+
+        </ul>
+      </nav>
+      <div class="image">
+        <img class="image1"  src="image/1ic.png">
+        <img class="image2"  src="image/2ic.png">
+        <img class="image3"  src="image/3ic.png">
+        <p id="cart-total-amount">0</p>
+        <form class="buy" action="Oplata.html">
+          <input type="submit" value="Купить"/>
+        </form>
+      </div>
+      <img class="header_additional_image"  src="image/image 2.png">
+    </div>
+  </header>
+  <main>
+    <h1>Форма оформления заказа</h1>
+    <div class="oplata row">
+      <div class="col-75">
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col">
+                <h2>Платежный адрес</h3>
+                  <label for="fname"><i class="fa fa-user"></i> ФИО</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Ваше имя">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="TEST@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Адрес</label>
+                  <input type="text" id="adr" name="address" placeholder="Ваш адрес">
+                  <label for="adr"><i class="fa fa-mobile"></i> Ваш телефон</label>
+                  <input type="text" id="adr" name="address" placeholder="Ваш телефон">
+                  <div class="row">
+                  </div>
+                </div>
+                <div class="col">
+                  <h2>Оплата</h3>
+                    <label for="card">Принятые карты</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Имя на карте</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Ваше Имя">
+                    <label for="ccnum">Номер кредитной карты</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111 2222 3333 4444">
+                    <label for="expmonth">Месяц</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="09">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Год</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2023">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" value="Продолжить оформление заказа" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="container">
+              <h3>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>TEST</b></span></h4>
+                <p><a href="#">Товар 1</a> <span class="price">TEST</span></p>
+                <p><a href="#">Товар 2</a> <span class="price">TEST</span></p>
+                <p><a href="#">Товар 3</a> <span class="price">TEST</span></p>
+                <p><a href="#">Товар 4</a> <span class="price">TEST</span></p>
+                <hr>
+                <p>Всего <span class="price" style="color:black"><b>TEST</b></span></p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <div>
+            <a href="#popular">Полпуярное</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О нас</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+          </div>
+          <div id="contacts">
+            <p>Контакты: Пучина Ирина</p>
+            <p>Номер телефона: +79349743658</p>
+            <p>Е-mail: Art-flower@gmail.com</p>
+            <p>ИП: 346704816496724</p>
+            <p>Адрес: Россия , Ленинградская Область , Санкт-Петербург , Вознесенский просп. 31</p>
+          </div>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0745e38eaf911d3aaaa2bdab9374aee1b7a33d67f43ed59adc3555f6a53cbbfb&amp;width=480&amp;height=480&amp;lang=ru_RU&amp;scroll=true"></script>
+        </footer>
+      </body>
+      </html>
